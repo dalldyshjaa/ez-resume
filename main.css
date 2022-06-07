@@ -3,6 +3,7 @@
   place-items: center;
   /* gap: 30px */
   /* margin-top: 50px; */
+  margin-bottom: 120px;
 }
 #nothing-great {
   font-size: 66px;
@@ -72,4 +73,95 @@
   .try-figma-for-free {
     font-size: 16px;
   }
+}
+.image-container img {
+  object-fit: cover;
+}
+.image-container {
+  /* background: url(./animation/picture.webp); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* height: 581px; */
+
+  /* display: grid; */
+  width: 100%;
+  justify-content: end;
+  justify-items: center;
+  grid-template-rows: auto;
+  position: relative;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+.image-wrapper {
+  display: grid;
+  position: relative;
+  margin: 0px auto;
+  width: 1440px;
+  /* overflow: hidden; */
+}
+#video1 {
+  width: 590px;
+  height: 737px;
+  position: absolute;
+  margin-top: -166px;
+  margin-left: 592px;
+  /* //592px */
+}
+#imagee {
+  height: 581px;
+  margin-left: -651px;
+  margin-right: 96px;
+}
+@media screen and (max-width: 1440px) {
+  .image-container {
+    height: 43vw;
+    margin: 0px;
+  }
+  .image-wrapper {
+    height: 100%;
+    margin: 0px;
+    position: relative;
+  }
+  #imagee {
+    height: 43vw;
+    margin-left: -40vw;
+  }
+  #video1 {
+    /* margin-bottom: 300px; */
+    position: absolute;
+    /* height: 97%; */
+    height: auto;
+    width: 44vw;
+    margin-top: -12.7vw;
+    /* padding-bottom: 0.7%; */
+    margin-left: 51.6vw;
+    /* margin-left: 50.8%; */
+    /* margin-top: 0; */
+  }
+}
+@media screen and (max-width: 670px) {
+  .first-section {
+    margin-bottom: 60px;
+  }
+  .image-container {
+    height: 45vw;
+    margin: 0px;
+  }
+  .image-wrapper {
+    height: 100%;
+    margin: 0px;
+    position: relative;
+  }
+  #imagee {
+    height: 45vw;
+    margin-left: -48vw;
+  }
+  #video1 {
+    margin-top: -10.8vw;
+    margin-left: 50vw;
+  }
+}
+.whatever {
+  height: 500px;
+  width: 100%;
 }
