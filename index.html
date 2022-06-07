@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>figma</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +14,50 @@
     />
   </head>
   <body>
+    <header class="small-header">
+      <div class="logo-wrapper">
+        <a href="index.html">
+          <svg viewBox="0 0 38 57" class="figma-77e5ie" aria-label="Homepage">
+            <path
+              fill="#1abcfe"
+              d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"
+            ></path>
+            <path
+              fill="#0acf83"
+              d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"
+            ></path>
+            <path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z"></path>
+            <path
+              fill="#f24e1e"
+              d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"
+            ></path>
+            <path
+              fill="#a259ff"
+              d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="header-option-wrapper">
+        <div class="header-items header__sign-up">
+          <button class="sign-up-button">Sign up</button>
+        </div>
+        <div class="header-items">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="none"
+            class="menu"
+          >
+            <path
+              fill="currentColor"
+              d="M2 3h20v3H2zM2 11h20v3H2zM2 19h20v3H2z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </header>
     <header class="header">
       <div class="logo-wrapper">
         <a href="index.html">
@@ -113,49 +158,25 @@
         </div>
       </div>
     </header>
-    <header class="small-header">
-      <div class="logo-wrapper">
-        <a href="index.html">
-          <svg viewBox="0 0 38 57" class="figma-77e5ie" aria-label="Homepage">
-            <path
-              fill="#1abcfe"
-              d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"
-            ></path>
-            <path
-              fill="#0acf83"
-              d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"
-            ></path>
-            <path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z"></path>
-            <path
-              fill="#f24e1e"
-              d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"
-            ></path>
-            <path
-              fill="#a259ff"
-              d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-      <div class="header-option-wrapper">
-        <div class="header-items header__sign-up">
-          <button class="sign-up-button">Sign up</button>
+    
+    <main class="main">
+      <section class="main__section first-section">
+        <h1 id="nothing-great">Nothing great is made alone</h1>
+        <video
+          src="./animation/animation.mp4"
+          class="videoanimation"
+          muted
+          autoplay
+        ></video>
+
+        <p>
+          Figma connects everyone in the design process </br> so teams can deliver
+          better products, faster.
+        </p>
+        <div class="figma-button-wrapper">
+          <button class="try-figma-for-free">Try figma for free</button>
         </div>
-        <div class="header-items">
-          <svg
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-            fill="none"
-            class="menu"
-          >
-            <path
-              fill="currentColor"
-              d="M2 3h20v3H2zM2 11h20v3H2zM2 19h20v3H2z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-    </header>
+      </section>
+    </main>
   </body>
 </html>
