@@ -67,9 +67,12 @@
 @media screen and (max-width: 1400px) {
   .community-animation {
     min-height: 65px;
-    gap: 137px;
+    /* gap: 137px; */
+    grid-template-columns: auto auto;
   }
   .community-animation1 {
+    animation-name: community-animation-smaller;
+    animation-duration: 15s;
     font-size: 36px;
     /* gap: 5px; */
   }
@@ -77,6 +80,19 @@
     width: 45px;
     height: 45px;
     margin: 0px 20px;
+  }
+}
+@keyframes community-animation-smaller {
+  0% {
+    transform: translate(0px, 0vw);
+    /* margin-left: 100%; */
+    /* width: 300%; */
+  }
+
+  100% {
+    transform: translate(-100%, 0vw);
+    /* margin-left: 0%; */
+    /* width: 100%; */
   }
 }
 
@@ -207,6 +223,8 @@
 .community-button-container:hover > button {
   transform: translate(0px, -3px);
   transition: 0.3s;
+}
+@media screen and (max-width: 1290px) {
 }
 .figma-account {
   padding: 144px 0px 80px;
