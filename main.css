@@ -13,6 +13,7 @@
   margin-bottom: 32px;
   margin-top: 64px;
 }
+
 .videoanimation {
   width: 790px;
   height: 285px;
@@ -89,6 +90,7 @@
   justify-items: center;
   grid-template-rows: auto;
   position: relative;
+  /* overflow-x: hidden; */
   /* position: relative; */
   /* overflow: hidden; */
 }
@@ -97,6 +99,7 @@
   position: relative;
   margin: 0px auto;
   width: 1440px;
+  /* overflow-x: hidden; */
   /* overflow: hidden; */
 }
 #video1 {
@@ -116,11 +119,13 @@
   .image-container {
     height: 43vw;
     margin: 0px;
+    /* overflow-x: hidden; */
   }
   .image-wrapper {
     height: 100%;
     margin: 0px;
     position: relative;
+    /* overflow-x: hidden; */
   }
   #imagee {
     height: 43vw;
@@ -146,11 +151,17 @@
   .image-container {
     height: 45vw;
     margin: 0px;
+    /* overflow-x: hidden; */
+  }
+  .image-container::-webkit-scrollbar,
+  .image-wrapper::-webkit-scrollbar {
+    display: none;
   }
   .image-wrapper {
     height: 100%;
     margin: 0px;
     position: relative;
+    /* overflow-x: hidden; */
   }
   #imagee {
     height: 45vw;
@@ -164,4 +175,172 @@
 .whatever {
   height: 500px;
   width: 100%;
+}
+.other-industires {
+  /* position: relative; */
+  width: 100%;
+  height: 228px;
+  /* width: 1260px; */
+  padding: 48px 32px;
+  /* display: grid; */
+  /* justify-content: center; */
+  /* margin: 0 auto; */
+}
+.other-industires__inner {
+  /* position: absolute; */
+  word-break: break-word;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: minmax(auto, 420px) 1fr auto;
+  place-items: center;
+  gap: 90px;
+  width: 1260px;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  padding: 32px 40px;
+}
+.other-industires__inner p {
+  position: relative;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+}
+.org-logos-section {
+  display: grid;
+  grid-auto-flow: column;
+  /* grid-template-columns: 64px 64px 64px 64px 64px; */
+  /* grid-template-rows: 64px; */
+  gap: 50px;
+  place-items: center;
+}
+.org-logos {
+  height: 64px;
+}
+.more-right-arrow {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  padding: 0px;
+  outline: none;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  color: black;
+}
+.little-arrow {
+  display: none;
+}
+.more-right-arrow:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1339px) {
+  .other-industires {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .other-industires__inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1253px) {
+  .other-industires {
+    height: 239px;
+  }
+  .other-industires__inner {
+    height: 143.6px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .less-important-logos {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .other-industires__inner {
+    padding: 24px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .other-industires {
+    height: 193px;
+  }
+  .other-industires__inner {
+    height: 97px !important;
+    grid-template-rows: 100%;
+  }
+  .other-industires__inner p {
+    font-size: 14.2px;
+  }
+  .org-logos {
+    width: 45px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .other-industires {
+    height: 215px;
+  }
+  .other-industires__inner {
+    height: 100% !important;
+  }
+}
+@media screen and (max-width: 670px) {
+  .more-right-arrow {
+    display: none;
+  }
+  .other-industires {
+    height: 253px;
+    grid-template-rows: 100%;
+  }
+  .other-industires__inner {
+    gap: 0px;
+    align-content: space-between;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .other-industires__inner p {
+    text-align: center;
+    font-size: 15px;
+  }
+  .less-important-logos {
+    display: inline;
+  }
+  .little-arrow {
+    display: inline;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 558px) {
+  .other-industires {
+    height: auto;
+    width: 100vw;
+    padding-right: 44px;
+  }
+  .other-industires__inner {
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 1fr auto;
+    gap: 10px;
+  }
+  .org-logos-section {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5vw;
+  }
+  .org-logos {
+    max-width: 45px;
+    max-height: 45px;
+    height: 100%;
+    width: 100%;
+  }
 }
