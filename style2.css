@@ -1,3 +1,140 @@
+.community {
+  margin-top: 80px;
+  padding: 104px 60px;
+  display: grid;
+  justify-items: center;
+  place-items: center;
+  /* text-align: center; */
+  background-color: black;
+}
+.community-top {
+  text-align: center;
+  width: 735px;
+  color: white;
+}
+.community-top h2 {
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.community-top p {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 22px 0px;
+}
+.community h3 {
+  color: rgb(255, 199, 0);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+.div-text {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+.mid-first-row {
+  margin: 80px auto;
+  width: 1160px;
+  height: 329px;
+}
+.community-images-container {
+  margin-top: 16px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 24px;
+}
+.community-images-container a {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff99;
+}
+.big-picture {
+  width: 370px;
+  height: 231px;
+  border-radius: 10px;
+}
+.info-container {
+  margin-top: 8px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+.info-container a {
+  text-decoration: none;
+}
+.small-profile-pictures {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.profile-container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.this-week {
+  width: 1160px;
+  height: 167px;
+  margin: 0px auto;
+}
+.this-week__images {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 24px;
+  margin-top: 15px;
+}
+.this-week__images a {
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 16px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  outline: none;
+}
+.this-week__images a:hover {
+  transition: 0.1s;
+  background-color: #78737382;
+  outline: 0.5px rgba(128, 128, 128, 0.63) solid;
+}
+.this-week h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.this-week span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff99;
+}
+.this-week-images {
+  height: 56px;
+  margin-right: 16px;
+  border-radius: 17px;
+}
+.community-button-container {
+  width: 100%;
+  text-align: center;
+}
+.community-button-container button {
+  padding: 14px 24px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.community-button-container:hover > button {
+  transform: translate(0px, -3px);
+  transition: 0.3s;
+}
 .figma-account {
   padding: 144px 0px 80px;
   width: 100%;
@@ -98,6 +235,9 @@ form p {
     padding: 0px 32px;
     width: 100%;
     grid-template-columns: 100%;
+  }
+  .figma-account {
+    padding: 64px 0px 32px;
   }
   .figma-account h2 {
     width: 100%;
