@@ -1,0 +1,105 @@
+.figma-account {
+  padding: 144px 0px 80px;
+  width: 100%;
+}
+
+.figma-account h2 {
+  color: #282828;
+  width: 336px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: roboto;
+  font-size: 35px;
+}
+.account-info-wrapper {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.account-info-wrapper form {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 336px;
+  justify-content: center;
+  gap: 15px;
+}
+form input {
+  height: 50px;
+  width: 100%;
+  padding: 8px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-family: arial;
+  font-size: 15px;
+}
+form * {
+  width: 100%;
+}
+form button {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 48px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: white;
+  font-family: roboto;
+  font-size: 16px;
+  cursor: pointer;
+}
+.figma-account-button-wrapper {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+.figma-account-button-wrapper:hover > button {
+  /* position: absolute; */
+  /* translate: 3px; */
+  transform: translate(0px, -3px);
+  transition: 0.3s;
+}
+
+form span {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: gray;
+  font-size: 14px;
+}
+form a {
+  text-decoration: none;
+  color: #5551ff;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+.less-important span,
+.less-important a {
+  line-height: 20px;
+  font-size: 12px;
+}
+form a:hover {
+  text-decoration: underline;
+}
+form p {
+  margin: 15px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+}
+
+.create-account-button {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+@media screen and (max-width: 410px) {
+  .account-info-wrapper form {
+    padding: 0px 32px;
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+  .figma-account h2 {
+    width: 100%;
+  }
+}

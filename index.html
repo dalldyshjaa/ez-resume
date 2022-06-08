@@ -6,6 +6,7 @@
     <title>figma</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -205,9 +206,35 @@ arrow_right_alt
         <a href="#" class="main-navigation-link">Design</a>
         <a href="#" class="main-navigation-link">Build</a>
       </div>
-      <footer><div>
+      <section class="figma-account">
+          <h2>Try Figma for free</h2>
         
-        <div class="social-media-div"><a href="">
+        <div class="account-info-wrapper">
+          <form action="" >
+            <div class="figma-account-button-wrapper">
+              <button>
+              <svg class="svg" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z" fill-rule="evenodd" fill-opacity="1" fill="#4285f4" stroke="none"></path><path d="M9.003 18c2.43 0 4.467-.806 5.956-2.18L12.05 13.56c-.806.54-1.836.86-3.047.86-2.344 0-4.328-1.584-5.036-3.711H.96v2.332C2.44 15.983 5.485 18 9.003 18z" fill-rule="evenodd" fill-opacity="1" fill="#34a853" stroke="none"></path><path d="M3.964 10.712c-.18-.54-.282-1.117-.282-1.71 0-.593.102-1.17.282-1.71V4.96H.957C.347 6.175 0 7.55 0 9.002c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill-rule="evenodd" fill-opacity="1" fill="#fbbc05" stroke="none"></path><path d="M9.003 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.464.891 11.428 0 9.002 0 5.485 0 2.44 2.017.96 4.958L3.967 7.29c.708-2.127 2.692-3.71 5.036-3.71z" fill-rule="evenodd" fill-opacity="1" fill="#ea4335" stroke="none"></path></svg>
+              <div>Continue with Google</div>
+            </button>
+            </div>
+            <p>or</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <div class="figma-account-button-wrapper">
+              <button type="submit" class="create-account-button">Create account</button>
+            </div>
+            <a href="">Sign up with SAML SSO</a>
+            <div>
+              <span >Aldready have an account? </span><a href="">Log in</a>
+            </div>
+            <div class="less-important"><span >By clicking "Create account", I agree to Figma's <a>TOS</a> and<br/><a>Privacy Policy.</a></span></div>
+          </form>
+        </div>
+      </section>
+      <footer>
+          <div>
+        
+          <div class="social-media-div"><a href="">
           
           <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MyIgaGVpZ2h0PSIyNiIgY2xhc3M9InN2ZyI+CiAgPHBhdGggZD0iTS41MiAwdjIwLjE2bDIuNi4wMXYtOS42aDYuMjVWOC4wM0gzLjExdi01LjVoOC4xNVYwSC41MnptMTUuNCA0LjFhMS43IDEuNyAwIDEgMCAwLTMuNCAxLjcgMS43IDAgMCAwIDAgMy40em0tMS4zMSAyLjUzdjEzLjU0aDIuNlY2LjYzaC0yLjZ6Ii8+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjYuODIgNi4yNGMtMy40NCAwLTUuODQgMi45MS01Ljg0IDYuMzdzMi40IDYuMzcgNS44NCA2LjM3YzEuNTggMCAyLjg4LS42IDMuODMtMS42djEuOGE0LjA3IDQuMDcgMCAwIDEtNC4wNiA0LjEyYy0uODMgMC0xLjY1LS4zMi0yLjMtLjc4bC0xLjMgMi4yNWE2LjY1IDYuNjUgMCAwIDAgMTAuMjYtNS42VjYuNjRoLTIuNnYxLjIxYy0uOTUtMS0yLjI1LTEuNi0zLjgzLTEuNnptLTMuMjUgNi4zN2MwLTIuMTUgMS42NC0zLjg0IDMuNTQtMy44NCAxLjkgMCAzLjUzIDEuNyAzLjUzIDMuODQgMCAyLjE1LTEuNjQgMy44My0zLjUzIDMuODMtMS45IDAtMy41NC0xLjY4LTMuNTQtMy44M3oiLz4KICA8cGF0aCBkPSJNNDIuNTkgOC43N2EyLjgzIDIuODMgMCAwIDAtMi43OCAyLjg0djguNTZoLTIuNlY2LjYzaDIuNnYxLjI0YTQuMSA0LjEgMCAwIDEgMy4zNC0xLjYzYzEuODIgMCAzLjIyLjkgNC4wMiAyLjI4YTQuOTggNC45OCAwIDAgMSA0LjEzLTIuMjhjMi45NSAwIDQuOCAyLjM4IDQuOCA1LjMzdjguNmgtMi41OFYxMS42YTIuODMgMi44MyAwIDAgMC0yLjc4LTIuODQgMi44MyAyLjgzIDAgMCAwLTIuNzggMi44NHY4LjU2aC0yLjZWMTEuNmEyLjgzIDIuODMgMCAwIDAtMi43Ny0yLjg0eiIvPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTY5LjkzIDguMTdhNi4yNyA2LjI3IDAgMCAwLTQuNTctMS45M2MtMy44NiAwLTYuNiAzLjI2LTYuNiA3LjE2IDAgMy45IDIuNzQgNy4xNiA2LjYgNy4xNmE2LjMgNi4zIDAgMCAwIDQuNTctMS45M3YxLjU0aDIuNTlWNi42M2gtMi42djEuNTR6bS04LjU4IDUuMjNjMC0yLjU4IDEuOTgtNC42MyA0LjI5LTQuNjMgMi4zIDAgNC4yOSAyLjA1IDQuMjkgNC42M3MtMS45OCA0LjYyLTQuMjkgNC42MmMtMi4zIDAtNC4yOS0yLjA0LTQuMjktNC42MnoiLz4KPC9zdmc+Cg==" alt="">
           </a>
@@ -237,9 +264,9 @@ arrow_right_alt
               </a>
             </li>
             </ul>
-        </div>
-      </div>
-        <div class="footer-links-container">
+          </div>
+          </div>
+          <div class="footer-links-container">
           <div class="div1">
           <h6>Use Cases</h6>
           <ul>
@@ -254,9 +281,9 @@ arrow_right_alt
             <li><a href="">Agencies</a></li>
             <li><a href="">Figma for eduaction</a></li>
           </ul>
-        </div>
+          </div>
         
-        <div class="div2">
+          <div class="div2">
           <h6>Explore</h6>
           <ul>
             <li><a href="">Design features</a></li>
@@ -272,9 +299,9 @@ arrow_right_alt
             <li><a href="">Integrations</a></li>
             <li><a href="">Contact</a></li>
           </ul>
-        </div>
+          </div>
         
-        <div class="div3">
+          <div class="div3">
           <h6>Resources</h6>
           <ul>
             <li><a href="">Blog</a></li>
@@ -291,9 +318,9 @@ arrow_right_alt
             <li><a href="">Privacy</a></li>
             <li><a href="">Status</a></li>
           </ul>
-        </div>
+          </div>
         
-        <div class="div4">
+          <div class="div4">
           <h6>Compare</h6>
           <ul>
             <li><a href="">Sketch</a></li>
@@ -303,9 +330,9 @@ arrow_right_alt
             <li><a href="">Design on Windows</a></li>
             <li><a href="">Miro</a></li>
           </ul>
-        </div>
-        </div>
-      </footer>
+          </div>
+          </div>
+        </footer>
     </main>
   </body>
 </html>
