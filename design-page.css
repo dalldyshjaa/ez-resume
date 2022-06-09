@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  background-color: #2c2c2c;
+  height: 48px;
+  /* padding: 8px; */
+}
+.header-units {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 10px;
+}
+.header-tool {
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  padding: 0px 5px;
+  color: white;
+  gap: 6px;
+}
+.header-tool:hover {
+  background-color: rgb(20, 20, 20);
+}
+
+.svg-arrow {
+  height: 100%;
+  /* max-height: 22px !important; */
+}
+.svg-arrow:hover {
+  transform: translate(0px, 4px);
+  transition: 0.3s;
+}
+.drafts-text,
+.header-units span {
+  color: rgb(155, 151, 151);
+  font-family: sans-serif;
+}
+.drafts-text:hover {
+  color: white;
+}
+.untitled {
+  color: white;
+  font-family: sans-serif;
+}
+.profile-avatar {
+  background-color: #14ae5c;
+  /* padding: 10px; */
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.profile-avatar p {
+  color: white;
+}
+.profile-side button {
+  padding: 0px 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: white;
+  width: 54px;
+  height: 32px;
+  background-color: #0d99ff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+.percentage-container {
+  height: 100%;
+  padding: 0px 4px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 6px;
+  place-items: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.profile-side svg:hover,
+.percentage-container:hover {
+  background-color: rgb(20, 20, 20);
+}
+.profile-side svg {
+  height: 100%;
+  padding: 0px 4px;
+}
+.first-unit {
+}
+@media screen and (max-width: 770px) {
+  .drafts-text,
+  .slash {
+    display: none;
+  }
+}
+
+main {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+.side-menu {
+  width: 241px;
+  border: 1px solid black;
+}
+.left-side-menu {
+  border-top: none;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-right: 1px solid rgb(175, 172, 172);
+}
+.layers-assets-pages-container {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  padding: 0px 10px;
+  border-bottom: 1px solid rgb(175, 172, 172);
+}
+.layers-assets-pages-container * {
+  font-family: sans-serif;
+}
+.layers-assets-pages-container span {
+  padding: 0px 3px;
+}
+.right-side-menu {
+  border-top: none;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  border-right: none;
+}
+.first-row {
+  display: grid;
+  grid-auto-flow: column;
+  padding-left: 10px;
+  gap: 10px;
+  height: 41px;
+  align-items: center;
+  font-size: 14px;
+  font-family: sans-serif;
+  justify-content: start;
+  border-bottom: 0.5px solid rgb(175, 172, 172);
+}
+.middle-row {
+  display: grid;
+  height: 81px;
+  padding: 8px 10px;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  justify-content: start;
+  border-bottom: 0.5px solid rgb(175, 172, 172);
+  grid-template-columns: 1fr;
+}
+.middle-row__tools {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.color-box {
+  height: 16px;
+  width: 16px;
+  border: 0.5px solid rgb(175, 172, 172);
+  background-color: #f5f5f5;
+}
+.color-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+  align-items: center;
+}
+.middle-row__third-row {
+  color: rgb(175, 172, 172);
+  font-size: 14px;
+  font-family: sans-serif;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  height: 49px;
+  padding: 8px 10px;
+  border-bottom: 0.5px solid rgb(175, 172, 172);
+  align-items: center;
+}
+.drawing-box {
+  background-color: #f5f5f5;
+  /* min-width: 501px; */
+}
+.questions-help {
+  margin-left: 175px;
+  margin-top: 1180px;
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #2c2c2c;
+  display: grid;
+  place-items: center;
+}
